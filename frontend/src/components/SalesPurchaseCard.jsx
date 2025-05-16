@@ -12,7 +12,7 @@ import {
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
 const salesDataByRange = {
-  Today: { sales: 32, purchases: 14912, orders: { sales: 2, purchases: 7 }, date: "1 Mar" },
+  Today: { sales: 3200, purchases: 14912, orders: { sales: 2, purchases: 7 }, date: "1 Mar" },
   "7 days": { sales: 270, purchases: 84120, orders: { sales: 18, purchases: 31 }, date: "Last 7 days" },
   "30 days": { sales: 1280, purchases: 245630, orders: { sales: 112, purchases: 176 }, date: "Last 30 days" },
   "60 days": { sales: 2110, purchases: 422220, orders: { sales: 178, purchases: 302 }, date: "Last 60 days" },
@@ -30,7 +30,7 @@ const SalesPurchaseCard = () => {
       {
         label: "Sales",
         data: [data.sales],
-        backgroundColor: "#3B82F6", // Blue
+        backgroundColor: "#9ACD32", // Yellow
       },
       {
         label: "Purchase",

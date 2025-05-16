@@ -1,7 +1,6 @@
 .invoice-container {
     font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: 0 auto;
+    margin-top: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -14,7 +13,10 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
   }
-  
+  .text-bold{
+    font-size: 30px;
+    font-family :600;
+  }
   .invoice-actions button {
     margin-left: 10px;
     padding: 8px 16px;
@@ -60,7 +62,6 @@
   
   .from-address, .to-address {
     flex: 1;
-    padding: 15px;
     border: 1px solid #eee;
     border-radius: 4px;
   }
@@ -183,12 +184,25 @@
     resize: vertical;
   }
   
-  @media print {
-    .invoice-actions {
-      display: none;
+  /* @media print {
+    body * {
+      visibility: hidden;
     }
-    
-    .invoice-container {
-      box-shadow: none;
+    .invoice-form, .invoice-form * {
+      visibility: visible;
     }
-  }
+    .invoice-form {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  } */
+  
+.top-right-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
